@@ -1,0 +1,14 @@
+---
+StackName: eks-cluster
+Parameters:
+- ParameterKey: Name
+  ParameterValue: "helloworld"
+
+- ParameterKey: SecurityGroup
+  ParameterValue: "sg-03ebec7c4c59f7937"
+
+- ParameterKey: Subnets
+  ParameterValue: "subnet-03aa50198edbbc666,subnet-04b2ae621c7d06eb6,subnet-08fe64dc514cd4e8d"
+
+- ParameterKey: Role
+  ParameterValue: "arn:aws:iam::949531964351:role/eks-helloworld-builder"

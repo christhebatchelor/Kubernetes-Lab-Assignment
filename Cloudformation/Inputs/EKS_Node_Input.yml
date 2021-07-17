@@ -1,0 +1,32 @@
+---
+StackName: eks-helloworld-node
+Parameters:
+- ParameterKey: KeyName
+  ParameterValue: default_key_pair
+
+- ParameterKey: NodeImageId
+  ParameterValue: "ami-0a8371504b52964aa"
+
+- ParameterKey: NodeInstanceType
+  ParameterValue: "t3.nano"
+
+- ParameterKey: NodeAutoScalingGroupMaxSize
+  ParameterValue: "2"
+
+- ParameterKey: NodeAutoScalingGroupDesiredCapacity
+  ParameterValue: "2"
+
+- ParameterKey: ClusterName
+  ParameterValue: "helloworld-cluster"
+
+- ParameterKey: NodeGroupName
+  ParameterValue: "Hello World Members"
+
+- ParameterKey: ClusterControlPlaneSecurityGroup
+  ParameterValue: "sg-03ebec7c4c59f7937"
+
+- ParameterKey: VpcId
+  ParameterValue: "vpc-0a0c7191e14127516"
+
+- ParameterKey: Subnets
+  ParameterValue: "subnet-03aa50198edbbc666,subnet-04b2ae621c7d06eb6,subnet-08fe64dc514cd4e8d"

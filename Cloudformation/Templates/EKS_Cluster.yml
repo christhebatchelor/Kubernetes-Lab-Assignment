@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Description: Role to enable EKS build
+
+Parameters: 
+  Name:
+    Description: Name prefix for the cluster
+    Type: String
+  SecurityGroup:
+    Description: ClusterControlPlaneSecurityGroup for the cluster
+    Type: String
+  Subnets:
+    Description: Subnets for the cluster
+    Type: List<AWS::EC2::Subnet::Id>
+  Role:
+    Description: ARN for the build role
+    Type: String
+
+Resources:
+  EKSCluster:
+    Type: 'AWS::EKS::Cluster'
+    Properties:
+      Name: !Sub ${Name}-cluster
+      ResourcesVpcConfig:
+        SecurityGroupIds: 
+        - !Ref SecurityGroup
+        SubnetIds: !Ref Subnets
+      RoleArn: !Ref Role

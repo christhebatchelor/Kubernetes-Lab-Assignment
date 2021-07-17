@@ -1,0 +1,5 @@
+---
+StackName: eks-creation-role
+Parameters:
+- ParameterKey: Purpose
+  ParameterValue: "helloworld"
