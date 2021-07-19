@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: 2010-09-09
 
-Description: Role to enable EKS build
+Description: EKS cluster build
 
 Parameters: 
   Name:
