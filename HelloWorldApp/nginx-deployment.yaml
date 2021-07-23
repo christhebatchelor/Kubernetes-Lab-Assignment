@@ -24,7 +24,7 @@ spec:
         io.kompose.service: nginx
     spec:
       containers:
-        - image: nginx
+        - image: christsreturn/nginx-test:latest
           name: nginx
           ports:
             - containerPort: 80

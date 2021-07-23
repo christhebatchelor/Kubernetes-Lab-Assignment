@@ -28,7 +28,7 @@ spec:
         - env:
             - name: APP_NAME
               value: MyFlaskApp
-          image: flask
+          image: christsreturn/flask-test:latest
           name: flask
           ports:
             - containerPort: 8080
