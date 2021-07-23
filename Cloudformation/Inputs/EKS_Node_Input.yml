@@ -8,13 +8,13 @@ Parameters:
   ParameterValue: "ami-0a8371504b52964aa"
 
 - ParameterKey: NodeInstanceType
-  ParameterValue: "t3.nano"
+  ParameterValue: "t3.small"
 
 - ParameterKey: NodeAutoScalingGroupMaxSize
-  ParameterValue: "2"
+  ParameterValue: "5"
 
 - ParameterKey: NodeAutoScalingGroupDesiredCapacity
-  ParameterValue: "2"
+  ParameterValue: "3"
 
 - ParameterKey: ClusterName
   ParameterValue: "helloworld-cluster"
