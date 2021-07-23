@@ -40,7 +40,9 @@ Grab the "NodeInstanceRole" from the Node cloudformation job and add it to the a
 
 ### Verify that the latest dockerub builds were successful
 If the application was modified it will be necessary to ensure that the containers built successfully on dockerhub prior to proceeding with the next steps.
+
 https://hub.docker.com/repository/docker/christsreturn/flask-test
+
 https://hub.docker.com/repository/docker/christsreturn/nginx-test
 
 ### Use Kubectl to apply the yaml files
@@ -59,7 +61,7 @@ Run the command below, and grab the url listed in the external-ip field for the 
 kubectl get svc
 ```
 
-Technology Justification:
+## Technology Justification:
 * Clodformation: I stuck with AWS and cloudformation because it is what I'm most familiar with. There is also plenty of documentation and support for when things go wrong. 
 * EKS: Using Amazon's built in offering here seemed like the quickest way to get this up and running given I had already decided to use the aws platform and cloudformation for this project. 
 * Python/flask: Python is a popular programming language with tons of support, and tutorials. The tutorial I found on creating and packaging a web application with docker used flask. 
