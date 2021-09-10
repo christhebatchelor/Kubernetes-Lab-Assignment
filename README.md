@@ -1,4 +1,4 @@
-# ID.Me.Homework
+# Kubernetes-Lab-Assignment
 
 ## Pre-reqs
 * AWS CLI (v2) is setup and configured to work with your account
